@@ -41,7 +41,7 @@ The activity was intended to simulate suspicious authentication behavior.
 
 The exact event timestamp must be obtained from the Ubuntu authentication logs. 
 
-The was happened  at Nov 5 from 14:51::21 to 15:23:26 showing password invalid while success login attempt has a timestamp of Nov 05 14:56:10 to 15:22:57 Accepted password for socadmin
+It was happened  at Nov 5 from 14:51::21 to 15:23:26 showing password invalid while success login attempt has a timestamp of Nov 05 14:56:10 to 15:22:57 Accepted password for socadmin
 ### WHERE
 
 The activity targeted:
