@@ -39,7 +39,7 @@ The activity was intended to simulate suspicious authentication behavior.
 
 ### WHEN
 
-The exact event timestamp must be obtained from the Ubuntu authentication logs.
+The exact event timestamp must be obtained from the Ubuntu authentication logs. 
 
 ### WHERE
 
