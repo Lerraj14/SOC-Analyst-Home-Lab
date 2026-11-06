@@ -15,7 +15,7 @@ The objective was to identify authentication patterns, analyze Linux security lo
 | Affected Host | SOC-Ubuntu-01 |
 | Operating System | Ubuntu Server |
 | Target Username | fakeuser |
-| Source IP | Pending log verification |
+| Source IP | YOUR_SERVER_IP |
 | Number of Attempts | 5 |
 | Severity | Informational / Low |
 | Status | Investigation Exercise |
