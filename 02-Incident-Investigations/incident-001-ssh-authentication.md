@@ -18,8 +18,8 @@ The objective was to simulate suspicious authentication activity and practice id
 | Affected Host | SOC-Ubuntu-01 |
 | Operating System | Ubuntu Server 26.04.1 LTS |
 | Target Username | fakeuser |
-| Source IP | To be verified from logs |
-| Timestamp | To be verified from logs |
+| Source IP | YOUR_SERVER_IP |
+| Timestamp |  Nov 5 from 14:51:21 to 15:23:26 |
 | Severity | Informational / Low |
 | Status | Investigation Exercise |
 
