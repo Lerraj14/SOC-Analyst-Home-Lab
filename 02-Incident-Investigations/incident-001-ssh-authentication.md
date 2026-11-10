@@ -18,8 +18,8 @@ The objective was to simulate suspicious authentication activity and practice id
 | Affected Host | SOC-Ubuntu-01 |
 | Operating System | Ubuntu Server 26.04.1 LTS |
 | Target Username | fakeuser |
-| Source IP | YOUR_SERVER_IP |
-| Timestamp |  Nov 5 from 14:51:21 to 15:23:26 |
+| Source IP | 192.168.189.129|
+| Timestamp |  Failed authentication: November 5  14:59:52 to 15:00:05 | Successful authentication November 5 15:21:40 to 15:22:57 |
 | Severity | Informational / Low |
 | Status | Investigation Exercise |
 
@@ -48,10 +48,10 @@ While success login attempt has a timestamp of Nov 05 14:56:10 to 15:22:57 Accep
 
 The activity targeted:
 
-- Hostname: SOC-Ubuntu-01
-- Operating System: Ubuntu Server
-- Service: OpenSSH
-- Network: VMware NAT
+- Target IP: Ubuntu Server IP.
+- Source IP: Windows host IP as observed by the server.
+- Target hostname: SOC-Ubuntu-01.
+- Service: OpenSSH.
 
 ### WHY
 
@@ -113,26 +113,35 @@ Actual log output and timestamps should be added after verification.
 
 ## 6. Findings
 
-The lab generated an unsuccessful SSH authentication attempt against the Ubuntu Server.
+The investigation identified an unsuccessful SSH authentication attempt against the Ubuntu Server virtual machine, SOC-Ubuntu-01.
 
-The attempted username was `fakeuser`.
+The attempted username was fakeuser, which was used to simulate suspicious authentication activity in a controlled home lab environment.
 
-The source IP address, exact timestamp, and related authentication events must be verified using the collected server logs.
+The authentication logs also contained successful login events associated with the socadmin account. These events require separate verification to determine whether they represent legitimate administrative activity.
 
-No successful unauthorized access or system compromise is established by this exercise.
+The source IP address and exact event timestamps must be confirmed using the server's authentication logs.
+
+No evidence of unauthorized access or system compromise has been established based on the available evidence.
 
 ## 7. Initial Assessment
 
-The observed event represents an unsuccessful authentication attempt.
+The observed failed authentication event represents a low-severity security event within the controlled lab environment.
 
-A single failed login is not sufficient evidence of a brute-force attack or successful compromise.
+A single failed authentication attempt does not establish brute-force activity or successful compromise.
 
-Further investigation would include:
+Further investigation should include:
 
-- Checking for repeated attempts from the same source.
-- Reviewing successful authentication events.
-- Identifying targeted usernames.
-- Correlating activity across authentication logs.
+Identifying the source IP address.
+
+Reviewing repeated failed authentication attempts.
+
+Correlating successful and unsuccessful login events.
+
+Verifying whether successful administrative logins were authorized.
+
+Reviewing relevant system and authentication logs.
+
+Assessment: No confirmed compromise. Further investigation is required to establish the legitimacy of related authentication activity.
 
 ## 8. Recommended Security Measures
 
