@@ -19,8 +19,8 @@ The objective was to simulate suspicious authentication activity and practice id
 | Operating System | Ubuntu Server 26.04.1 LTS |
 | Target Username | fakeuser |
 | Source IP | 192.168.189.129 port 45954|
-| Timestamp |  Failed authentication: November 5  14:59:52 to 15:00:05 | 
-            |  Successful authentication November 5 15:21:40 to 15:22:57 | 
+| Failed login Timestamp |  Failed authentication: November 5  14:59:52 to 15:00:05 | 
+| Success login Timestamp | Successful authentication November 5 15:21:40 to 15:22:57 | 
 | Severity | Informational / Low |
 | Status | Investigation Exercise |
 
