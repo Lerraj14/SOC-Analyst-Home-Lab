@@ -18,7 +18,7 @@ The objective was to simulate suspicious authentication activity and practice id
 | Affected Host | SOC-Ubuntu-01 |
 | Operating System | Ubuntu Server 26.04.1 LTS |
 | Target Username | fakeuser |
-| Source IP | 192.168.189.129|
+| Source IP | 192.168.189.129 port 45954|
 | Timestamp |  Failed authentication: November 5  14:59:52 to 15:00:05 | Successful authentication November 5 15:21:40 to 15:22:57 |
 | Severity | Informational / Low |
 | Status | Investigation Exercise |
@@ -39,10 +39,38 @@ The activity was intended to simulate suspicious authentication behavior.
 
 ### WHEN
 
-The exact event timestamp must be obtained from the Ubuntu authentication logs. 
+The investigation focused on authentication events
+recorded on November 5, 2026.
 
-It was happened  at Nov 5 from 14:51:21 to 15:23:26 showing password invalid for fakeuser.
-While success login attempt has a timestamp of Nov 05 14:56:10 to 15:22:57 Accepted password for socadmin.
+The exact timestamps for failed and successful
+authentication events were reviewed using the Ubuntu
+authentication logs.
+
+All event timestamps should be correlated with their
+respective usernames, source IP addresses, and outcomes.
+
+### Failed Authentication Review
+
+A Failed SSH authentication event was  identified
+in the investigation window.
+
+The log recorded an accepted password for the account
+`fakeuser`.
+
+It was happened at Nov 5 from 15:00:05 to 15:01:33 showing password invalid for fakeuser.
+
+### Successful Authentication Review
+
+A successful SSH authentication event was also identified
+in the investigation window.
+
+The log recorded an accepted password for the account
+`socadmin`.
+
+success login attempt has a timestamp of Nov 05 15:21:40 to 15:22:57 Accepted password for socadmin.
+
+No unauthorized access is concluded without additional
+supporting evidence.
 
 ### WHERE
 
@@ -93,6 +121,22 @@ sudo lastb -n 10
 
 ```bash
 sudo journalctl --since "15 minutes ago" | grep -i sudo
+```
+
+### Step 6: Check failed authentication attempts:
+
+```bash
+sudo lastb -Fai | head -20
+```
+
+### Step 7: Check successful login history:
+```bash
+sudo last -Fai | head -20
+```
+
+### You can also filter the SSH logs:
+```bash
+sudo journalctl -u ssh --no-pager | grep -iE 'invalid user|failed password|accepted password'
 ```
 
 ## 5. Evidence Collection
