@@ -131,15 +131,15 @@ A single failed authentication attempt does not establish brute-force activity o
 
 Further investigation should include:
 
-Identifying the source IP address.
+- Identifying the source IP address.
 
-Reviewing repeated failed authentication attempts.
+- Reviewing repeated failed authentication attempts.
 
-Correlating successful and unsuccessful login events.
+- Correlating successful and unsuccessful login events.
 
-Verifying whether successful administrative logins were authorized.
+- Verifying whether successful administrative logins were authorized.
 
-Reviewing relevant system and authentication logs.
+- Reviewing relevant system and authentication logs.
 
 Assessment: No confirmed compromise. Further investigation is required to establish the legitimacy of related authentication activity.
 
