@@ -70,4 +70,4 @@ No unauthorized systems are targeted.
 
 ## Author
 
-Cybersecurity learner | CompTIA Security+ certified | Aspiring SOC Analyst L1
+L2 Application Support | CompTIA Security+ | Security Operations Portfolio.
