@@ -59,7 +59,7 @@ flowchart LR
 
 I confirmed that Wazuh agent `001` was registered and active before analyzing the simulation. The Endpoints dashboard displayed one active agent and no disconnected, pending, or never-connected agents.
 
-![Active Wazuh agent](Project-03-Wazuh-SIEM/SSH Brute-Force Detection Using Wazuh SIEM/01-wazuh-agent-active.png)
+![Active Wazuh agent]([screenshots/02-authentication-log-verification.png](https://github.com/Lerraj14/SOC-Analyst-Home-Lab/blob/main/Project-03-Wazuh-SIEM/SSH%20Brute-Force%20Detection%20Using%20Wazuh%20SIEM/01-wazuh-agent-active.png))
 
 *Evidence 01 — active Ubuntu agent, IP address, operating system, and Wazuh version.*
 
