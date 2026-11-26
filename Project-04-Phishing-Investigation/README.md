@@ -214,7 +214,7 @@ If the objective were credential collection for reconnaissance rather than initi
 
 **Analyst verdict:** The evidence is consistent with a simulated credential phishing attempt based on the deceptive account verification request, sender identity mismatch, and deliberately supplied authentication failures. No real-world compromise was established. The exercise was closed following documentation of the findings.
 
-![SOC incident investigation findings report](screenshots/07-investigation-findings(1).png)
+![SOC incident investigation findings report](screenshots/07-investigation-findings.png)
 
 *Figure 8 — Final SOC incident findings and recommended remediation report.*
 
