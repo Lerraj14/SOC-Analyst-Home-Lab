@@ -177,7 +177,7 @@ The hash identifies the specific file contents; it is not a malware verdict. It 
 Get-FileHash .\evidence\suspicious-email.eml -Algorithm SHA256
 ```
 
-**Deliverable:** [indicators-of-compromise.csv](reports/indicators-of-compromise.csv)
+**Deliverable:** [indicators-of-compromise.csv](evidence/indicators-of-compromise.csv)
 
 ![IOC inventory reviewed in Google Sheets](screenshots/06-ioc-extraction.png)
 
