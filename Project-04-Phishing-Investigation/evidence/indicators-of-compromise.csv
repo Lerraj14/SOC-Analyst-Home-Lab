@@ -1,0 +1,8 @@
+	IOC Type,Indicator,	Source,	Assessment,	Classification
+Email,support@company.example,From Header,Potential sender impersonation,Synthetic
+Email,sender@example.invalid,Return-Path Header,Sender mismatch,Synthetic
+IP Address,203.0.113.45,Received Header,Reserved TEST-NET-3 IP,Synthetic
+Hostname,mail.example.invalid,Received Header,Simulated mail server,Synthetic
+Domain,account-review.example.invalid,Email Body,Potential phishing domain,Synthetic
+URL,https://account-review.example.invalid/verify,Email Body,Simulated credential phishing URL,Synthetic
+SHA256,AF877F97A97E817B9E1C7464DC93CCEF32CDBD0C7B6B028E05B1C3F1117D3357,Email Evidence,File integrity fingerprint,Synthetic

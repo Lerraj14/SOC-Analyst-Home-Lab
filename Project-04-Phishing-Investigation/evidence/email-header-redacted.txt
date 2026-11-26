@@ -1,0 +1,11 @@
+From: IT Support <support@company.example>
+To: employee@example.com
+Subject: Account Verification - Training Sample
+Return-Path: <sender@example.invalid>
+Received: from mail.example.invalid (203.0.113.45)
+Authentication-Results: mx.example.com;
+    spf=fail;
+    dkim=none;
+    dmarc=fail
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
